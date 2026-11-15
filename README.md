@@ -59,3 +59,5 @@ No multicursor or advanced IntelliSense. Only web files run in preview. Python a
 ## 更新履歴 / Changelog
 
 - v2: 青を基調にした UI、検索とコマンド操作、入力補助、行操作、状態表示、プレビュー操作を改善。 / Refined blue UI, search, commands, editing aids, line actions, status and preview controls.
+
+- 修正: プレビューが表示されない不具合（初期化時に要素が消えて処理が停止）を修正。 / Fixed a bug where the preview never rendered. 
