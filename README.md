@@ -1,5 +1,11 @@
 # Live Code Editor
 
+[デモを開く / Open demo](https://uyuk216.github.io/live-code-editor/)
+
+- オフラインで使える軽量エディタ / Lightweight offline editor
+- 日英 UI、ダーク・ライトテーマ / Japanese and English UI, dark and light themes
+- HTML/CSS/JS プレビューと JSON 入出力 / Web preview and JSON import/export
+
 自作エンジンで動く、軽量なブラウザ用コードエディタです。作者: うゆ。外部ライブラリや CDN は不要で、オフラインでも使えます。
 
 ## 起動
@@ -49,3 +55,7 @@ Add declarative language pack JSON in the Extensions panel using the example abo
 ## Limits
 
 No multicursor or advanced IntelliSense. Only web files run in preview. Python and Java-family files can be edited, highlighted, saved and downloaded. There is no real terminal, debugger or extension marketplace. Highlighting is skipped on very large files. Browser storage has a capacity limit.
+
+## 更新履歴 / Changelog
+
+- v2: 青を基調にした UI、検索とコマンド操作、入力補助、行操作、状態表示、プレビュー操作を改善。 / Refined blue UI, search, commands, editing aids, line actions, status and preview controls.
