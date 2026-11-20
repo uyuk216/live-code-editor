@@ -1,4 +1,3 @@
-0
 import AppKit
 import WebKit
 
@@ -100,9 +99,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         win.contentView = newWebView
         win.center()
         win.makeKeyAndOrderFront(nil)
-        if let url = navigationAction.request.url {
-            newWebView.load(URLRequest(url: url))
-        }
+        // 読み込みは WebKit 側が行う（blob: URL は自前 load だと失敗するため、ここでは読み込まない）
         return newWebView
     }
 
