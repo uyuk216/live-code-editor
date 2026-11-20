@@ -69,6 +69,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         alert.messageText = message
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "キャンセル")
+        alert.buttons.last?.keyEquivalent = "\u{1b}"
         completionHandler(alert.runModal() == .alertFirstButtonReturn)
     }
 
@@ -80,6 +81,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         alert.accessoryView = field
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "キャンセル")
+        alert.buttons.last?.keyEquivalent = "\u{1b}"
         alert.window.initialFirstResponder = field
         if alert.runModal() == .alertFirstButtonReturn {
             completionHandler(field.stringValue)
